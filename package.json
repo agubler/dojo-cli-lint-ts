@@ -14,11 +14,12 @@
     "url": "https://github.com/agubler/dojo-cli-lint-ts.git"
   },
   "scripts": {
-    "prepublish": "grunt peerDepInstall",
     "test": "grunt test"
   },
   "devDependencies": {
+    "@types/chalk": "^0.4.30",
     "codecov.io": "0.1.6",
+    "dojo-cli": "^2.0.0-alpha.4",
     "dojo-loader": ">=2.0.0-beta.7",
     "dts-generator": "~1.7.0",
     "glob": "^7.0.3",
@@ -27,7 +28,13 @@
     "intern": "^3.2.3",
     "istanbul": "^0.4.3",
     "remap-istanbul": "^0.6.4",
-    "tslint": "^3.11.0",
     "typescript": "~2.0.3"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "glob": "^7.1.0",
+    "pkg-dir": "^1.0.0",
+    "tslint": "next",
+    "yargs": "^6.0.0"
   }
 }
